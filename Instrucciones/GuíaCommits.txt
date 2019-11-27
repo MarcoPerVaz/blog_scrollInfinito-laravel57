@@ -5,3 +5,12 @@ Commit - Crear y configurar el proyecto
   -Creación de la carpeta Instrucciones
     -Creación del archivo GuíaCommits.txt
   -Edición del archivo readme.md
+Commit - Ruta API y WEB
+  -Renombrar vista welcome.blade.php
+    -index.blade.php
+      -Edición de la vista index.blade.php
+  -Edición del archivo de rutas web.php
+  -Edición del archivo de rutas api.php
+  -Creación del modelo Post
+    -php artisan make:model Post -a
+      -Dónde -a crea el controlador, la migración y el factory
