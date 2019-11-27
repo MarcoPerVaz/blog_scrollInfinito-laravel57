@@ -14,3 +14,19 @@ Commit - Ruta API y WEB
   -Creación del modelo Post
     -php artisan make:model Post -a
       -Dónde -a crea el controlador, la migración y el factory
+Commit - Concepto de API
+  -Edición del archivo .env
+      -DB_DATABASE=blog_scrollInfinito-laravel57-vuejs
+      -DB_USERNAME=root
+      -DB_PASSWORD=
+  -Edición de la migración create_posts_table
+  -Edición del factory PostFactory
+  -Creación y edición de seeder PostsTableSeeder
+    -php artisan make:seeder PostsTableSeeder
+  -Edición de DatabaseSeeder
+  -Creación de la base de datos en HeidiSQL
+    Nombre: blog_scrollInfinito-laravel57-vuejs
+  -Comando para llenar la base de datos
+    -php artisan migrate:refresh --seed
+  -Edición del controlador PostController
+Nota: API es un sistema proveedor de datos para el proyecto
