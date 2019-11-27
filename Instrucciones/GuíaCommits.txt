@@ -30,3 +30,10 @@ Commit - Concepto de API
     -php artisan migrate:refresh --seed
   -Edición del controlador PostController
 Nota: API es un sistema proveedor de datos para el proyecto
+Commit - Package.json
+  -Comando para instalar las librerías frontend
+    -npm install
+  -Comando para instalar el componente de Vue para scroll infinito
+    -npm install vue-infinite-loading --save-dev
+    Nota: Tuve que instalar la versión actual y después modificar el package.json para poder usar la versión 
+          2.4.3, luego el comando npm install
