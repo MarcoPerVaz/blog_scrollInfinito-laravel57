@@ -1,0 +1,7 @@
+<----------Proyecto Blog con Scroll Infinito Laravel 5.7 y Vuejs---------->
+Commit - Crear y configurar el proyecto
+  -Instalación del proyecto
+    -composer create-project --prefer-dist laravel/laravel blog_scrollInfinito-laravel57-Vuejs "5.7.*"
+  -Creación de la carpeta Instrucciones
+    -Creación del archivo GuíaCommits.txt
+  -Edición del archivo readme.md
