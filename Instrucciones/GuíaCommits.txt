@@ -37,3 +37,16 @@ Commit - Package.json
     -npm install vue-infinite-loading --save-dev
     Nota: Tuve que instalar la versión actual y después modificar el package.json para poder usar la versión 
           2.4.3, luego el comando npm install
+Commit - Componente Vuejs con Bootstrap 4
+  -Edición de la vista index.blade.php
+  -Renombrar el componente resources/js/components/ExampleComponent.vue
+    -PostsComponent.vue
+      -Edición del componente PostsComponent
+  -Edición del archivo resources/app.js
+    Nota:En este archivo se registran los componentes
+  -Comando para compilar vue
+    -npm run dev
+    Error: En el curso se usa:
+            -Vue.component('posts', require('./components/PostsComponent.vue'));
+            Solución para mi fue:
+              -Vue.component('posts', require('./components/PostsComponent.vue').default);
