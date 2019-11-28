@@ -50,3 +50,7 @@ Commit - Componente Vuejs con Bootstrap 4
             -Vue.component('posts', require('./components/PostsComponent.vue'));
             Solución para mi fue:
               -Vue.component('posts', require('./components/PostsComponent.vue').default);
+Commit - Componente vue-infinite-loading
+  -Edición del archivo resources/app.js
+    -Registro del componente vue-infinite-loading
+  -Edición del componente PostsComponent
