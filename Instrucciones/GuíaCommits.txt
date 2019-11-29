@@ -59,3 +59,9 @@ Commit - Componente Scroll Infinito
     -Edición de la función infiniteHandler($state)
   -Comando para compilar 
     -npm run dev
+Commit - Explicación | componentes propios y externos
+  Nota: El nombre del commit es referente al npmbre del vídeo
+    -En general se refiere a que dentro del componente <posts></posts>,
+     se usa el componente <infinite-loading></infinite-loading>
+  -Edición del componente PostsComponent
+    Nota: Cambiando mensajes de Inglés a Español en el componente

@@ -1719,6 +1719,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -37184,7 +37188,19 @@ var render = function() {
             ])
           }),
           _vm._v(" "),
-          _c("infinite-loading", { on: { infinite: _vm.infiniteHandler } })
+          _c("infinite-loading", { on: { infinite: _vm.infiniteHandler } }, [
+            _c("div", { attrs: { slot: "no-more" }, slot: "no-more" }, [
+              _vm._v("--")
+            ]),
+            _vm._v(" "),
+            _c("div", { attrs: { slot: "spinner" }, slot: "spinner" }, [
+              _vm._v("Cargando...")
+            ]),
+            _vm._v(" "),
+            _c("div", { attrs: { slot: "no-results" }, slot: "no-results" }, [
+              _vm._v("Sin resultados")
+            ])
+          ])
         ],
         2
       )
