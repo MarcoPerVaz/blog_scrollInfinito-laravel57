@@ -54,3 +54,8 @@ Commit - Componente vue-infinite-loading
   -Edición del archivo resources/app.js
     -Registro del componente vue-infinite-loading
   -Edición del componente PostsComponent
+Commit - Componente Scroll Infinito
+  -Edición del componente PostsComponent
+    -Edición de la función infiniteHandler($state)
+  -Comando para compilar 
+    -npm run dev

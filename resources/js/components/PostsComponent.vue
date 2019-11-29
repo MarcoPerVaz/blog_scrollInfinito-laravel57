@@ -6,6 +6,7 @@
                     <a class="card-header" v-bind:href="item.slug" v-text="item.title"></a>
 
                     <div class="card-body">
+                        <p>ID: {{ item.id }}</p>
                         <p class="card-text" v-text="item.body"></p>
                     </div>
                 </div>
@@ -37,7 +38,27 @@
 
             infiniteHandler($state) {
 
-                // Este método se va a conectar al servidor
+                this.page++;
+                // https://blog_scrollinfinito-laravel57-vuejs.it/api/posts?page=4
+                let url = 'https://blog_scrollinfinito-laravel57-vuejs.it/api/posts?page=' + this.page
+
+                /* Axios */
+                axios.get( url ).then( response => {
+
+                    let posts = response.data.data
+
+                    if ( posts.length ) {
+                        
+                        this.list = this.list.concat( posts )
+                        $state.loaded()
+
+                    } else {
+
+                        $state.complete()
+                    }
+
+                } );
+
 
             }
 
