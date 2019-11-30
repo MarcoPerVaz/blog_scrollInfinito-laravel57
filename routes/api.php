@@ -15,3 +15,6 @@ use Illuminate\Http\Request;
 
 /* Ruta API de inicio */
 Route::get( 'posts', 'PostController@index' );
+
+/* Ruta para mostrar la información del post */
+Route::get( 'post/{slug}', 'PostController@show' );

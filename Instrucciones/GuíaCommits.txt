@@ -65,3 +65,11 @@ Commit - Explicación | componentes propios y externos
      se usa el componente <infinite-loading></infinite-loading>
   -Edición del componente PostsComponent
     Nota: Cambiando mensajes de Inglés a Español en el componente
+Commit - Instalación de Vue-Router
+  -Comando para la instalación de la librería Vue-Router
+    -npm install vue-router --save-dev
+  -Edición del archivo de rutas routes/api.php
+  -Edición del controlador PostController
+    -Creación y edición de la función show($slug)
+  -Creación del componente AppComponent.vue
+  -Edición de la vista index.blade.php

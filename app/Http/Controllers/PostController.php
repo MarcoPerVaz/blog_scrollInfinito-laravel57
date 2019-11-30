@@ -19,4 +19,14 @@ class PostController extends Controller
         
     }
 
+    /**
+     * Función para mostrar la información del post
+     */
+    public function show( $slug )
+    {
+
+        return Post::where( 'slug', $slug )->first();
+
+    }
+
 }
