@@ -73,3 +73,9 @@ Commit - Instalación de Vue-Router
     -Creación y edición de la función show($slug)
   -Creación del componente AppComponent.vue
   -Edición de la vista index.blade.php
+Commit - Páginas Vue
+  -Creación de la carpeta views en resources/js/
+    -Creación y edición de la vista 404.vue en la carpeta resources/js/
+    -Creación y edición de la vista Blog.vue en la carpeta resources/js/
+    -Creación y edición de la vista Home.vue en la carpeta resources/js/
+    -Creación y edición de la vista Post.vue en la carpeta resources/js/
