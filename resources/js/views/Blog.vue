@@ -1,9 +1,21 @@
 <template>
-  <div class="col-md-8">
-    <h1>Blog</h1>
+<div>
+  <section class="jumbotron text-center">
+    <div class="container">
+      <h1 class="jumbotron-heading">Blog</h1>
+    </div>
+  </section>
 
-    <!-- Componente PostsComponent.vue -->
-    <posts></posts>
-    
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+
+        <!-- Componente PostsComponent.vue -->
+        <posts></posts>
+        
+      </div>
+    </div>
   </div>
+  
+</div>
 </template>

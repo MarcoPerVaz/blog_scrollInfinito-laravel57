@@ -89,3 +89,9 @@ Commit - Introducción a plantillas Bootstrap4 dentro de vue
     -Pegar lo copiado del código fuente
       -Etiqueta header
       -Etiqueta section con la clase jumbotron
+Commit - Terminando la plantila Bootstrap4
+  -Edición del componente AppComponent
+  -Edición de la vista vue Home.vue
+  -Edición de la vista vue Blog.vue
+  -Edición de la vista vue 404.vue
+  -Edición de la vista vue Post.vue
