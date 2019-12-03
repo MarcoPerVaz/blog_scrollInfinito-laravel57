@@ -79,3 +79,13 @@ Commit - Páginas Vue
     -Creación y edición de la vista Blog.vue en la carpeta resources/js/
     -Creación y edición de la vista Home.vue en la carpeta resources/js/
     -Creación y edición de la vista Post.vue en la carpeta resources/js/
+Commit - Introducción a plantillas Bootstrap4 dentro de vue
+  -Copiar código HTML desde:
+    -https://getbootstrap.com/docs/4.1/examples/album/
+      -Click derecho y ver código fuente de esta página
+    -Copiar la etiqueta header
+    -Copiar la etiqueta section con la clase jumbotron
+  -Edición del componente AppComponent.vue
+    -Pegar lo copiado del código fuente
+      -Etiqueta header
+      -Etiqueta section con la clase jumbotron
