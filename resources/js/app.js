@@ -20,9 +20,12 @@ window.Vue = require('vue');
 // const files = require.context('./', true, /\.vue$/i)
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
-Vue.component('posts', require('./components/PostsComponent.vue').default);
-Vue.component( 'app', require( './components/AppComponent.vue' ) );
-Vue.component( 'InfiniteLoading', require( 'vue-infinite-loading' ) );
+Vue.component( 'posts', require('./components/PostsComponent.vue' ).default );
+Vue.component( 'app', require('./components/AppComponent.vue' ).default );
+Vue.component( 'InfiniteLoading', require( 'vue-infinite-loading' ).default );
+
+/* Import de Vue-Router */
+import router from './routes'
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -31,5 +34,6 @@ Vue.component( 'InfiniteLoading', require( 'vue-infinite-loading' ) );
  */
 
 const app = new Vue({
-    el: '#app'
+    el: '#app',
+    router
 });
