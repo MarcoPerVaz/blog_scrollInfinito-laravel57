@@ -1,25 +1,29 @@
 <template>
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-8">
-                <div class="card mb-3 mt-3" v-for="item in list" :key="item.id">
-                    <a class="card-header" v-bind:href="item.slug" v-text="item.title"></a>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card mb-3 mt-3" v-for="item in list" :key="item.id">
 
-                    <div class="card-body">
-                        <p>ID: {{ item.id }}</p>
-                        <p class="card-text" v-text="item.body"></p>
-                    </div>
+                <router-link 
+                    class="card-header"
+                    :to="{name: 'post', params: {slug: item.slug}}"
+                    v-text="item.title"
+                >
+                </router-link>
+
+                <div class="card-body">
+                    <p>ID: {{ item.id }}</p>
+                    <p class="card-text" v-text="item.excerpt"></p>
                 </div>
-
-                <!-- Componente vue-infinite-loading -->
-                <infinite-loading @infinite="infiniteHandler">
-                    <div slot="no-more">--</div>
-                    <div slot="spinner">Cargando...</div>
-                    <div slot="no-results">Sin resultados</div>
-                </infinite-loading>
-                <!-- Nota <infinite-loading></infinite-loading> en app.js se puso como InfiniteLoading -->
-
             </div>
+
+            <!-- Componente vue-infinite-loading -->
+            <infinite-loading @infinite="infiniteHandler">
+                <div slot="no-more">--</div>
+                <div slot="spinner">Cargando...</div>
+                <div slot="no-results">Sin resultados</div>
+            </infinite-loading>
+            <!-- Nota <infinite-loading></infinite-loading> en app.js se puso como InfiniteLoading -->
+
         </div>
     </div>
 </template>

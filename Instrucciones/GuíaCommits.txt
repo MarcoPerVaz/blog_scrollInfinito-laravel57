@@ -106,3 +106,7 @@ Commit - Sistema de rutas con Vue-Router
         -Debe agregarse .default al registrar el componente
   -Comando para compilar vue
     -npm run dev
+Commit - Enlace dinámico
+  -Edición del componente PostsComponent
+  -Comando para compilar vue
+    -npm run dev

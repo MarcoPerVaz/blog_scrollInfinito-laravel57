@@ -1723,6 +1723,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -37288,17 +37292,19 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "container" }, [
-    _c("div", { staticClass: "row justify-content-center" }, [
-      _c(
-        "div",
-        { staticClass: "col-md-8" },
-        [
-          _vm._l(_vm.list, function(item) {
-            return _c("div", { key: item.id, staticClass: "card mb-3 mt-3" }, [
-              _c("a", {
+  return _c("div", { staticClass: "row" }, [
+    _c(
+      "div",
+      { staticClass: "col-md-12" },
+      [
+        _vm._l(_vm.list, function(item) {
+          return _c(
+            "div",
+            { key: item.id, staticClass: "card mb-3 mt-3" },
+            [
+              _c("router-link", {
                 staticClass: "card-header",
-                attrs: { href: item.slug },
+                attrs: { to: { name: "post", params: { slug: item.slug } } },
                 domProps: { textContent: _vm._s(item.title) }
               }),
               _vm._v(" "),
@@ -37307,29 +37313,30 @@ var render = function() {
                 _vm._v(" "),
                 _c("p", {
                   staticClass: "card-text",
-                  domProps: { textContent: _vm._s(item.body) }
+                  domProps: { textContent: _vm._s(item.excerpt) }
                 })
               ])
-            ])
-          }),
+            ],
+            1
+          )
+        }),
+        _vm._v(" "),
+        _c("infinite-loading", { on: { infinite: _vm.infiniteHandler } }, [
+          _c("div", { attrs: { slot: "no-more" }, slot: "no-more" }, [
+            _vm._v("--")
+          ]),
           _vm._v(" "),
-          _c("infinite-loading", { on: { infinite: _vm.infiniteHandler } }, [
-            _c("div", { attrs: { slot: "no-more" }, slot: "no-more" }, [
-              _vm._v("--")
-            ]),
-            _vm._v(" "),
-            _c("div", { attrs: { slot: "spinner" }, slot: "spinner" }, [
-              _vm._v("Cargando...")
-            ]),
-            _vm._v(" "),
-            _c("div", { attrs: { slot: "no-results" }, slot: "no-results" }, [
-              _vm._v("Sin resultados")
-            ])
+          _c("div", { attrs: { slot: "spinner" }, slot: "spinner" }, [
+            _vm._v("Cargando...")
+          ]),
+          _vm._v(" "),
+          _c("div", { attrs: { slot: "no-results" }, slot: "no-results" }, [
+            _vm._v("Sin resultados")
           ])
-        ],
-        2
-      )
-    ])
+        ])
+      ],
+      2
+    )
   ])
 }
 var staticRenderFns = []
