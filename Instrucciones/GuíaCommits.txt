@@ -110,3 +110,6 @@ Commit - Enlace dinámico
   -Edición del componente PostsComponent
   -Comando para compilar vue
     -npm run dev
+Commit - Ruta con parámetro
+  -Edición de la vista vue Post.vue
+  -Edición del componente AppComponent
