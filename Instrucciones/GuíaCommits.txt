@@ -113,3 +113,9 @@ Commit - Enlace dinámico
 Commit - Ruta con parámetro
   -Edición de la vista vue Post.vue
   -Edición del componente AppComponent
+Commit - Repaso final del curso y despedida
+  Error: Al ir al detalle de un post y posteriormente darle f5 o actualizar página muestra la pantalla 
+         de 404, en el curso no se solucionó esto pero yo lo deje así por seguir igual al curso
+  -Edición del archivo de rutas web.php
+    -Este cambio solo evita que muestre el error 404 de laravel y muestra la vista de vue 404
+<----------Fin---------->
